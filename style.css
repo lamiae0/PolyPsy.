@@ -1,0 +1,168 @@
+/* style - adaptation - ET */
+
+/* .et-page:nth-child(1) {
+  background: yellow;
+}
+
+.et-page:nth-child(2) {
+  background: blue;
+}
+
+.et-page:nth-child(3) {
+  background: purple;
+}
+
+style - core
+
+/*::-webkit-scrollbar {
+    height: 3px;
+    width: 3px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555555;
+    -webkit-border-radius: 7px;
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-corner {
+    background: #000;
+}*/
+
+body {
+  margin: 0;
+  background: black;
+}
+
+h2 {
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.topbar {
+  position: fixed;
+  height: 45px;
+  width: 100%;
+  background-color: rgba(249,0,249,0.8);
+  z-index: 99999;
+  padding: 10px;
+  text-align: center;
+}
+
+.button_tb_left {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background-color: yellow;
+  left: 10px;
+  top: 10px;
+}
+
+.button_tb_right {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  background-color: maroon;
+  right: 30px;
+  top: 10px;
+}
+
+.tabbar {
+  position: fixed;
+  height: 45px;
+  width: 100%;
+  background-color: orange;
+  z-index: 99999;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  z-index: 99999;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:65px;
+  padding: 10px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#9dff89+0,05abe0+100 */
+  background: #9dff89; /* Old browsers */
+  background: -moz-linear-gradient(top, #9dff89 0%, #05abe0 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #9dff89 0%,#05abe0 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #9dff89 0%,#05abe0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dff89', endColorstr='#05abe0',GradientType=0 ); /* IE6-9 */
+}
+
+#push {
+  height: 45px;
+  width: 200px;
+  background-color: green;
+  z-index: 99999;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 25px;
+  font-size: 18px;
+  font-family: arial, sans-serif;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+#push:hover {
+  background-color: blue;
+}
+
+#push:active {
+  background-color: black;
+}
+
+#splashscreen {
+  height: 100%;
+  width: 100%;
+  background-color: #dad3fb;
+  font-family: arial, sans-serif;
+  font-color:black;
+  font-size:33px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+
+}
+#logo {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  background-image: url(../img/logo.png);
+}
+
+.title_screen {
+ margin: auto 0;
+ margin-top: -33px;
+ /* enlever le margin-top si hamburger menu à droite */
+}
+
+.btlist{
+  height: 40px;
+  width: 100%;
+}
+
+.btbar {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  display:inline-block;
+  margin-right: 5%;
+  background-color: red;
+}
+
+#bt1 {
+  /* spécification de style par bt*/
+}

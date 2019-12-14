@@ -1,0 +1,299 @@
+<!-- mockup MyApp, transitions lib: <http://dan-silver.github.io/ElementTransitions/> -->
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <!-- début : affichage E1 Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fin : affichage E1 Mobile -->
+
+    <!-- début : dépendances ET -->
+    <link rel="stylesheet" type="text/css" href="css/elementTransitions.css" />
+    <script src="js/elementTransitions.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!-- fin : dépendances ET -->
+
+    <!-- début : style H menu -->
+    <link rel="stylesheet" type="text/css" href="css/hamburger_left.css" />
+    <!-- fin : style H menu -->
+
+    <!-- début : mon style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- fin : mon style -->
+
+
+    <title>My App</title>
+
+  </head>
+
+  <body>
+
+  <!-- début : wrapper/empaquetage global -->
+  <div class="et-wrapper">
+
+    <!-- ************ début : écran #0 ********************************************* -->
+    <div id="0" class="et-page et-rotate" et-in="scaleUpDown delay300" et-out="scaleDown" et-nextP=1>
+
+      <!-- début : content -->
+     <div id="splashscreen">
+        <div id="logo"></div>
+     </div>
+     <!-- fin : content -->
+
+    </div>
+    <!-- ************ fin : écran #0 ********************************************* -->
+
+    <!-- ************ début : écran #1 ********************************************* -->
+    <div id="1" data-role="page" class="et-page">
+
+    <!-- début : topbar -->
+     <div class="topbar">
+        <!--<div class="button_tb_left"></div>-->
+        <div class="button_tb_right"></div>
+
+        <!-- début : hamburger menu -->
+        <nav role="navigation">
+          <div id="menuToggle">
+          <input type="checkbox"/>
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a class="et-rotate" et-in="scaleUp" et-out="rotateFall ontop" et-nextP=2><li>Page 2</li></a>
+            <a class="et-rotate" et-in="flipInTop delay500" et-out="flipOutBottom" et-nextP=3><li>Page 3</li></a>
+            <a class="et-rotate" et-in="scaleUp" et-out="rotateFall ontop" et-nextP=4><li>Page 4</li></a>
+            <a class="et-rotate" et-in="rotateCarouselLeftIn" et-out="rotateCarouselLeftOut" et-nextP=0><li>Page 0</li></a>
+          </ul>
+          </div>
+        </nav>
+        <!-- fin : hamburger menu -->
+
+    <div class="title_screen"><h2>Ecran #1</h2></div>
+    </div>
+    <!-- fin : topbar -->
+
+     <!-- début : content -->
+     <div class="content">
+      <button class="et-rotate" et-in="flipInTop delay500" et-out="flipOutBottom" et-nextP=3>Page 3</button>
+      <a class="et-rotate" et-in="scaleUp" et-out="rotateFall ontop" et-nextP=2><div id="push">Page 2</div></a>
+     </div>
+     <!-- fin : content -->
+
+     <!-- début : tabbar -->
+     <div class="tabbar">
+       <div class="btlist">
+       <div id="bt1" class="btbar"></div>
+       <div id="bt2" class="btbar"></div>
+       <div id="bt3" class="btbar"></div>
+       <div id="bt4" class="btbar"></div>
+       <div id="bt5" class="btbar"></div>
+       </div>
+     </div>
+     <!-- fin : tabbar -->
+
+    </div>
+    <!-- ************ fin : écran #1 ********************************************* -->
+
+    <!-- ************ début : écran #2 ********************************************* -->
+    <div id="2" data-role="page" class="et-page">
+
+    <!-- début : topbar -->
+     <div class="topbar">
+      <!--<div class="button_tb_left"></div>-->
+      <div class="button_tb_right"></div>
+
+     <!-- début : hamburger menu -->
+     <nav role="navigation">
+      <div id="menuToggle2">
+      <input type="checkbox"/>
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu2">
+        <a class="et-rotate" et-in="scaleUp" et-out="rotateFall ontop" et-nextP=2><li>Page 2</li></a>
+        <a class="et-rotate" et-in="flipInTop delay500" et-out="flipOutBottom" et-nextP=3><li>Page 3</li></a>
+        <a class="et-rotate" et-in="scaleUp" et-out="rotateFall ontop" et-nextP=4><li>Page 4</li></a>
+        <a class="et-rotate" et-in="rotateCarouselLeftIn" et-out="rotateCarouselLeftOut" et-nextP=0><li>Page 0</li></a>
+      </ul>
+      </div>
+    </nav>
+    <!-- fin : hamburger menu -->
+
+    <div class="title_screen"><h2>Ecran #2</h2></div>
+    </div>
+    <!-- fin : topbar -->
+
+     <!-- début : content -->
+     <div class="content">
+      <button class="et-rotate" et-in="rotateCarouselLeftIn" et-out="rotateCarouselLeftOut" et-nextP=0>Page 0</button>
+     </div>
+     <!-- fin : content -->
+
+  <!-- début : tabbar -->
+     <div class="tabbar">
+       <div class="btlist">
+       <div id="bt1" class="btbar"></div>
+       <div id="bt2" class="btbar"></div>
+       <div id="bt3" class="btbar"></div>
+       <div id="bt4" class="btbar"></div>
+       <div id="bt5" class="btbar"></div>
+       </div>
+     </div>
+     <!-- fin : tabbar -->
+
+    </div>
+    <!-- ************ fin : écran #2 ********************************************* -->
+
+    <!-- ************ début : écran #3 ********************************************* -->
+    <div id="3" data-role="page" class="et-page">
+
+    <!-- début : topbar -->
+     <div class="topbar">
+      <!--<div class="button_tb_left"></div>-->
+      <div class="button_tb_right"></div>
+
+      <!-- début : hamburger menu -->
+      <nav role="navigation">
+      <div id="menuToggle3">
+      <input type="checkbox"/>
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu3">
+        <a class="et-rotate" et-in="scaleUp" et-out="rotateFall ontop" et-nextP=2><li>Page 2</li></a>
+        <a class="et-rotate" et-in="flipInTop delay500" et-out="flipOutBottom" et-nextP=3><li>Page 3</li></a>
+        <a class="et-rotate" et-in="scaleUp" et-out="rotateFall ontop" et-nextP=4><li>Page 4</li></a>
+        <a class="et-rotate" et-in="rotateCarouselLeftIn" et-out="rotateCarouselLeftOut" et-nextP=0><li>Page 0</li></a>
+      </ul>
+      </div>
+    </nav>
+    <!-- fin : hamburger menu -->
+
+    <div class="title_screen"><h2>Ecran #3</h2></div>
+    </div>
+    <!-- fin : topbar -->
+
+     <!-- début : content -->
+     <div class="content">
+      <button class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=1 >Page 1</button>
+     </div>
+     <!-- fin : content -->
+
+     <!-- début : tabbar -->
+     <div class="tabbar"></div>
+     <!-- fin : tabbar -->
+
+    </div>
+    <!-- ************ fin : écran #3 ********************************************* -->
+
+    <!-- ************ début : écran #4 ********************************************* -->
+    <div id="4" data-role="page" class="et-page">
+
+    <!-- début : topbar -->
+     <div class="topbar">
+      <!--<div class="button_tb_left"></div>-->
+      <div class="button_tb_right"></div>
+
+      <!-- début : hamburger menu -->
+      <nav role="navigation">
+      <div id="menuToggle4">
+      <input type="checkbox"/>
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu4">
+        <a class="et-rotate" et-in="scaleUp" et-out="rotateFall ontop" et-nextP=2><li>Page 2</li></a>
+        <a class="et-rotate" et-in="flipInTop delay500" et-out="flipOutBottom" et-nextP=3><li>Page 3</li></a>
+        <a class="et-rotate" et-in="scaleUp" et-out="rotateFall ontop" et-nextP=4><li>Page 4</li></a>
+        <a class="et-rotate" et-in="rotateCarouselLeftIn" et-out="rotateCarouselLeftOut" et-nextP=0><li>Page 0</li></a>
+      </ul>
+      </div>
+    </nav>
+    <!-- fin : hamburger menu -->
+
+    <div class="title_screen"><h2>Ecran #4</h2></div>
+    </div>
+    <!-- fin : topbar -->
+
+     <!-- début : content -->
+     <div class="content">
+      <button class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=1>Page 1</button>
+     </div>
+     <!-- fin : content -->
+
+     <!-- début : tabbar -->
+     <div class="tabbar"></div>
+     <!-- fin : tabbar -->
+
+    </div>
+    <!-- ************ fin : écran #4 ********************************************* -->
+
+    <!-- ************ début : écran #5 ********************************************* -->
+    <div id="4" data-role="page" class="et-page">
+
+    <!-- début : topbar -->
+     <div class="topbar">
+      <!--<div class="button_tb_left"></div>-->
+      <div class="button_tb_right"></div>
+
+      <!-- début : hamburger menu -->
+      <nav role="navigation">
+      <div id="menuToggle4">
+      <input type="checkbox"/>
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <ul id="menu4">
+        <a class="et-rotate" et-in="scaleUp" et-out="rotateFall ontop" et-nextP=2><li>Page 2</li></a>
+        <a class="et-rotate" et-in="flipInTop delay500" et-out="flipOutBottom" et-nextP=3><li>Page 3</li></a>
+        <a class="et-rotate" et-in="scaleUp" et-out="rotateFall ontop" et-nextP=4><li>Page 4</li></a>
+        <a class="et-rotate" et-in="rotateCarouselLeftIn" et-out="rotateCarouselLeftOut" et-nextP=0><li>Page 0</li></a>
+      </ul>
+      </div>
+    </nav>
+    <!-- fin : hamburger menu -->
+
+    <div class="title_screen"><h2>Ecran #4</h2></div>
+    </div>
+    <!-- fin : topbar -->
+
+     <!-- début : content -->
+     <div class="content">
+      <button class="et-rotate" et-in="rotateSlideIn" et-out="rotateSlideOut" et-nextP=1>Page 1</button>
+     </div>
+     <!-- fin : content -->
+
+     <!-- début : tabbar -->
+     <div class="tabbar"></div>
+     <!-- fin : tabbar -->
+
+    </div>
+    <!-- ************ fin : écran #4 ********************************************* -->
+
+  </div>
+  <!-- fin : wrapper/empaquetage global -->
+
+  </body>
+
+  <!-- début : script plein écran -->
+  <script>
+    if (document.fullscreenEnabled) {
+      var btn = document.getElementById("splashscreen");
+      btn.addEventListener("click", function (event) {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen();
+        }
+      }, false);
+    }
+    </script>
+  <!-- fin : script plein écran -->
+
+</html>

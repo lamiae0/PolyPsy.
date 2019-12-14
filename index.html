@@ -1,0 +1,77 @@
+<!-- mockup MyApp, transitions lib: <http://dan-silver.github.io/ElementTransitions/> -->
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <!-- début : affichage E1 Mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fin : affichage E1 Mobile -->
+
+    <!-- début : dépendances ET -->
+    <link rel="stylesheet" type="text/css" href="css/elementTransitions.css" />
+    <script src="js/elementTransitions.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!-- fin : dépendances ET -->
+
+    <!-- début : style H menu -->
+    <link rel="stylesheet" type="text/css" href="css/hamburger_left.css" />
+    <!-- fin : style H menu -->
+
+    <!-- début : mon style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- fin : mon style -->
+
+
+    <title>My App</title>
+
+  </head>
+
+  <body>
+
+  <!-- début : wrapper/empaquetage global -->
+  <div class="et-wrapper">
+
+    <!-- ************ début : écran #0 ********************************************* -->
+    <div id="0" class="et-page et-rotate" et-in="scaleUpDown delay300" et-out="scaleDown" et-nextP=1>
+
+      <!-- début : content -->
+     <div id="splashscreen">
+        <div id="logo"></div>
+     </div>
+     <!-- fin : content -->
+
+    </div>
+    <!-- ************ fin : écran #0 ********************************************* -->
+
+    <!-- ************ début : écran #1 ********************************************* -->
+    <div id="1" data-role="page" class="et-page">
+
+     <!-- début : content -->
+     <div class="content"></div>
+     <!-- fin : content -->
+
+    </div>
+    <!-- ************ fin : écran #1 ********************************************* -->
+
+  </div>
+  <!-- fin : wrapper/empaquetage global -->
+
+  </body>
+
+  <!-- début : script plein écran -->
+<!--  <script>
+    if (document.fullscreenEnabled) {
+      var btn = document.getElementById("splashscreen");
+      btn.addEventListener("click", function (event) {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen();
+        }
+      }, false);
+    }
+    </script> -->
+  <!-- fin : script plein écran -->
+
+</html>
